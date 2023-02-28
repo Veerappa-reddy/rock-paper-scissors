@@ -117,6 +117,7 @@ class RockPaperScissors extends Component {
                 src={eachType.imageUrl}
                 alt="your choice"
                 className="select-type-img"
+                key={eachType.id}
               />
             </button>
           ))}
@@ -126,7 +127,7 @@ class RockPaperScissors extends Component {
   }
 
   render() {
-    const {typesList, isClick, resultText, score} = this.state
+    const {isClick, resultText, score} = this.state
     console.log(resultText)
 
     return (

@@ -12,7 +12,7 @@ const Navbar = props => {
         </h1>
       </div>
       <div className="score-container">
-        <p>SCORE</p>
+        <p>Score</p>
         <p className="score">{score}</p>
       </div>
     </div>
