@@ -26,7 +26,10 @@ class RockPaperScissors extends Component {
 
   onClickType = id => {
     const {typesList, score} = this.state
-    const randomIndex = Math.ceil(Math.random() * typesList.length)
+    const randomIndex =
+      Math.floor(Math.ceil(Math.random() * typesList.length)) - 1
+    console.log(randomIndex)
+
     const randomTypeId = typesList[randomIndex].id
 
     let result = ''
