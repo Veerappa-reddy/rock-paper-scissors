@@ -26,8 +26,7 @@ class RockPaperScissors extends Component {
 
   onClickType = id => {
     const {typesList, score} = this.state
-    const randomIndex =
-      Math.floor(Math.ceil(Math.random() * typesList.length)) - 1
+    const randomIndex = Math.floor(Math.random() * typesList.length)
     console.log(randomIndex)
 
     const randomTypeId = typesList[randomIndex].id
@@ -120,7 +119,7 @@ class RockPaperScissors extends Component {
                 src={eachType.imageUrl}
                 alt="your choice"
                 className="select-type-img"
-                key={eachType.id}
+                // key={eachType.id}
               />
             </button>
           ))}
